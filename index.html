@@ -29,14 +29,14 @@
             </section>
             
             <section id="information">
-                <div>
+                <article>
                     <img src="./resources/images/information-main.jpg">
                     <h2>It doesn't hurt to keep practicing</h2>
                     <p>"Cras malesuada orci vel dolor iaculis, eget finibus sapien condimentum. Vivamus sed nisl sit amet arcu ultricies posuere at eget dui. Phasellus vitae nulla bibendum sem placerat dapibus. Integer posuere tellus enim, nec maximus lorem ullamcorper porta. Donec scelerisque at felis ut rutrum. Maecenas odio ipsum, tristique eu ornare non, semper ut elit. Sed bibendum at leo sed dictum."</p>
                     <p><strong>Emanuel, Sr Strategist at Hiring.com</strong></p>
-                </div>
-                <div>
-                    <div>
+                </article>
+                <div id="info-container">
+                    <div class="info-card">
                         <img src="./resources/images/information-orientation.jpg">
                         <div>
                             <h3>Orientation date</h3>
@@ -44,7 +44,7 @@
                             <p><a>Read more</a></p>
                         </div>
                     </div>
-                    <div>
+                    <div class="info-card">
                         <img src="./resources/images/information-campus.jpg">
                         <div>
                             <h3>Our campus</h3>
@@ -52,7 +52,7 @@
                             <p><a>Read more</a></p>
                         </div>
                     </div>
-                    <div>
+                    <div class="info-card">
                         <img src="./resources/images/information-guest-lecture.jpg">
                         <div>
                             <h3>Our guest lecture</h3>
@@ -65,7 +65,7 @@
 
             <section id="courses">
                 <h2>Start learning</h2>
-                <div>
+                <div id="course-container">
                     <div class="course-card">
                         <img src="./resources/images/course-software.jpg">
                         <h3>Software engineering</h3>
@@ -108,32 +108,42 @@
             <section id="thesis-exhibit">
                 <h2>Thesis exhibit</h2>
                 <div>
-                    <video controls>
-                        <source src="./resources/videos/thesis.mp4" type="video/mp4">
-                    </video>
-                    <div>
-                        <div>
-                            <img src="./resources/images/thesis-fisma.jpg">
-                            <div>
-                                <h3>Fisma: Design and Prototype</h3>
-                                <p>Designer showcase of new prototype product</p>
+                    <div id="exhibit-container">
+                        <article>
+                            <video controls>
+                                <source src="./resources/videos/thesis.mp4" type="video/mp4">
+                            </video>
+                            <h3>Reimagine urban</h3>
+                            <p>"Cras malesuada orci vel dolor iaculis, eget finibus sapien condimentum. Vivamus sed nisl sit amet arcu ultricies posuere at eget dui. Phasellus vitae nulla bibendum sem placerat dapibus. Integer posuere tellus enim, nec maximus lorem ullamcorper porta. Donec scelerisque at felis ut rutrum. Maecenas odio ipsum, tristique eu ornare non, semper ut elit. Sed bibendum at leo sed dictum."</p>
+                        </article>
+                        <div id="thesis-card-container">
+                            <div class="thesis-card">
+                                <img src="./resources/images/thesis-fisma.jpg">
+                                <div>
+                                    <h3>Fisma: Design and Prototype</h3>
+                                    <p>Designer showcase of new prototype product</p>
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <img src="./resources/images/thesis-now-and-then.jpg">
-                            <div>
-                                <h3>Now and then</h3>
-                                <p>Research study about New York</p>
+                            <div class="thesis-card">
+                                <img src="./resources/images/thesis-now-and-then.jpg">
+                                <div>
+                                    <h3>Now and then</h3>
+                                    <p>Research study about New York</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <h3>Reimagine urban</h3>
-                    <p>"Cras malesuada orci vel dolor iaculis, eget finibus sapien condimentum. Vivamus sed nisl sit amet arcu ultricies posuere at eget dui. Phasellus vitae nulla bibendum sem placerat dapibus. Integer posuere tellus enim, nec maximus lorem ullamcorper porta. Donec scelerisque at felis ut rutrum. Maecenas odio ipsum, tristique eu ornare non, semper ut elit. Sed bibendum at leo sed dictum."</p>
-                </div>
             </section>
         </main>
-        <footer></footer>        
+        <footer>
+            <div>
+                <p>© 2016 Colmar Academy. All rights reserved</p>
+            </div>
+            <div>
+                <p><a>Terms</a></p>
+                <p><a>Privacy</a></p>
+            </div>
+        </footer>        
     </body>
 </html>
