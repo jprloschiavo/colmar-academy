@@ -1,6 +1,10 @@
 html {
     font-size: 8px;
+    color: rgba(74,74,74,255);
     font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 h2 {
@@ -20,14 +24,34 @@ body {
     padding: 0;
 }
 
+main {
+    margin: 8rem 0 0 0;
+}
+
+main, footer {
+    background-color: rgba(243,245,245,255);
+}
+
 header {
     display: flex;
+    background-color: white;
+    box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.2);
     justify-content: space-between;
     align-items: center;
+    position: fixed;
     z-index: 1;
+    width: 100%;
     height: 8rem;
-    background-color: white;
+    top: 0;
+}
+
+header div, nav {
     padding: 0 3rem;
+}
+
+nav p {
+    display: flex;
+    gap: 2rem;
 }
 
 section {
@@ -35,10 +59,22 @@ section {
     padding: 4rem 0;
 }
 
+#banner {
+    background-color: rgba(234, 235, 236, 255);
+}
+
 #banner img {
     width: 60%;
     height: auto;
     margin: 0 3rem;
+}
+
+#banner button {
+    background-color: rgba(74,74,74,255);
+    color: white;
+    border: 0;
+    padding: 1rem 0;
+    width: 100%;
 }
 
 #information article {
@@ -54,6 +90,7 @@ section {
 #info-container {
     display: flex;
     flex-direction: column;
+    border-left: 2px solid rgba(234, 235, 236, 255);
     width: 40%;
 }
 
@@ -71,6 +108,10 @@ section {
     width: 65%;
 }
 
+.info-card a {
+    color: blue;
+}
+
 #courses {
     background-color: rgba(234, 235, 236, 255);
     flex-direction: column;
@@ -83,17 +124,22 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 1rem;
 }
 
 .course-card {
     background-color: white;
-    display: flex;
-    flex-direction: column;
+    box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.2);
+    width: 30%;
 }
 
 .course-card img {
     width: 100%;
     height: auto;
+}
+
+.course-card div {
+    padding: 2rem 2rem 3rem;
 }
 
 #thesis-exhibit {
@@ -117,6 +163,7 @@ section {
 }
 
 #thesis-card-container {
+    border-left: 2px solid rgba(234, 235, 236, 255);
     width: 40%;
 }
 
@@ -138,6 +185,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 2rem 3rem;
+    border-top: 2px solid rgba(234, 235, 236, 255);
 }
 
 footer div {
