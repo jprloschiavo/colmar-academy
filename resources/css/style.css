@@ -19,6 +19,11 @@ p {
     font-size: 1.75rem;
 }
 
+em {
+    font-style: normal;
+    text-transform: uppercase;
+}
+
 body {
     margin: 0;
     padding: 0;
