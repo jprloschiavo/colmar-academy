@@ -238,21 +238,19 @@ footer div {
     }
 
     #information {
+        width: 100%;
         padding: 2rem 0 0;
     }
 
-    #information article {
-        display: none;
-    }
-
     #info-container {
-        width: 100%;
-        padding: 2rem;
+        width: inherit;
+        padding: 2rem 0;
     }
 
     .info-card {
         flex-direction: column;
         padding-bottom: 4rem;
+        margin: 0 2rem;
     }
 
     .info-card div {
