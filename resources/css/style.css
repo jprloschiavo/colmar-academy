@@ -37,6 +37,10 @@ main, footer {
     background-color: rgba(243,245,245,255);
 }
 
+.mobile {
+    display: none;
+}
+
 header {
     display: flex;
     background-color: white;
@@ -54,7 +58,7 @@ header div, nav {
     padding: 0 3rem;
 }
 
-nav p {
+header nav p {
     display: flex;
     gap: 2rem;
 }
@@ -103,7 +107,7 @@ section {
     display: flex;
 }
 
-.info-card img {
+.info-card .desktop {
     width: 35%;
     height: auto;
     margin: 2rem;
@@ -121,21 +125,20 @@ section {
     background-color: rgba(234, 235, 236, 255);
     flex-direction: column;
     align-items: center;
-    padding-left: 9rem;
-    padding-right: 9rem;
 }
 
 #course-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    padding: 0 9rem;
 }
 
 .course-card {
     background-color: white;
     box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.2);
     width: 30%;
+    margin: 0.5rem;
 }
 
 .course-card img {
@@ -143,7 +146,7 @@ section {
     height: auto;
 }
 
-.course-card div {
+.course-card .desktop div {
     padding: 2rem 2rem 3rem;
 }
 
@@ -195,4 +198,88 @@ footer {
 
 footer div {
     display: flex;
+}
+
+/* Desktop */
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* Tablet & Mobile */
+@media only screen and (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+    
+    header .mobile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    #banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    #banner img {
+        width: 100%;
+    }
+
+    #banner div {
+        padding: 0 2rem 4rem 2rem;
+    }
+
+    #information {
+        padding: 2rem 0 0;
+    }
+
+    #information article {
+        display: none;
+    }
+
+    #info-container {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .info-card {
+        flex-direction: column;
+        padding-bottom: 4rem;
+    }
+
+    .info-card div {
+        padding: 0 2rem;
+    }
+
+    #courses {
+        padding: 4rem 2rem;
+    }
+
+    #course-container {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .course-card {
+        width: 100%;
+    }
+
+    .course-card button {
+        width: inherit;
+    }
+
+    #thesis-exhibit video {
+        width: 100%;
+        height: auto;
+    }
 }
